@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./Styles/global.css">
+	<link rel="stylesheet" href="./Styles/form.css">
+	<link rel="stylesheet" href="./Styles/interface-page.css">
+
+
+	<title>Library Manager</title>
+
+</head>
+
+<body>
+	<script src="Scripts/interface-page.js" defer></script>
+
+	<!-- FORM -->
+	<div class="form-container" id="form-container">
+
+		<div class="form-title" id="form-title">Add+</div>
+
+		<div class="form-line-sep"></div>
+
+		<form onsubmit="submitForm(); return false;" class="form-input-container" id="form-element">
+
+			<div class="input-field" id="if0"></div>
+			<div class="input-field" id="if1"></div>
+			<div class="input-field" id="if2"></div>
+			<div class="input-field" id="if3"></div>
+
+			<div class="form-btn-container" id="form-btn-container">
+				<input type="submit" class="form-btn" id="form-submit-button" name="submitAddForm" value="submit">
+				<div class="form-btn" id="form-cancel-button" onclick="formContainerHide()"> Cancel</div>
+			</div>
+
+			<div class="form-footer" id="form-footer"></div>
+		</form>
+
+	</div>
+
+	<!-- INTERFACE PAGE -->
+	<div id="page-container">
+
+		<!-- SIDE BAR -->
+		<div class="side-bar-section">
+
+			<div class="side-bar-header">
+				<p id="uname-label"> </p>
+
+
+			</div>
+			<div class="side-line-sep" id="side-line-top"></div>
+
+			<div class="side-bar-menu">
+
+				<div class="side-bar-button" onclick="formContainerDisplay('add-member')">Add Member</div>
+				<div class="side-bar-button" onclick="formContainerDisplay('add-book')">Add Book</div>
+
+			</div>
+
+			<div class="side-line-sep" id="side-line-btm"></div>
+
+			<div class="side-bar-button" id="logout-button" name="logout-button" onclick="logout()">
+				Logout
+			</div>
+
+		</div>
+
+
+		<!-- MAIN SECTION -->
+		<div class="main-section">
+
+			<div class="main-header" id="main-header">
+				<div class="main-selector selector-active" id="selector-1" onclick="refreshSelector()">Members</div>
+
+				<div class="main-selector selector-unactive" id="selector-2" onclick="swapSelector()">Books</div>
+			</div>
+
+			<!-- Get Data from the DataBase -->
+			<div class="main-render-area" id="main-render-area">
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+
+</html>

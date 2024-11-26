@@ -1,0 +1,26 @@
+:root {
+    --color-neutral: hsl(27, 52%, 92%);
+	--color-bkgr   : hsl(26, 10%, 75%);
+	--color-accept : #5981ac;
+	--color-focus  : #80a5cc;
+	--color-reject : #ec7878;
+
+	--color-shadow: #141418;
+	--color-hover : #fafafa;
+
+	--animate-time     : .15s;
+	--animate-time-fast: .1s;
+	--animate-time-slow: .3s;
+}
+
+* {
+    font-family: 'Consolas', 'Courier New', monospace ;
+    outline: none;
+}
+
+
+.links {
+    margin: 1rem;
+    text-decoration: none;
+	color: var(--color-accept);
+}

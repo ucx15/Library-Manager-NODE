@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+
+	<link rel="stylesheet" href="./Styles/global.css">
+	<link rel="stylesheet" href="./Styles/form.css">
+	<link rel="stylesheet" href="./Styles/login-page.css">
+
+</head>
+
+<body>
+	<script src="Scripts/index-page.js" defer></script>
+
+	<div class="page-info">
+		<div class="page-title">Libry</div>
+		<div class="page-subtitle">
+			Simple Library Management System
+			written in Vanilla JS
+		</div>
+	</div>
+
+
+	<div class="footer">
+		made with 🧠 by<a href="https://github.com/ucx15" target="__blank"  class="links" rel="noopener noreferrer">ucx15</a>
+	</div>
+
+	<div class="form-container ">
+		<div class="form-title">Libry</div>
+
+		<div class="form-line-sep"></div>
+
+		<!-- <form class="form-input-container" action="./login_validate.php" method="post"> -->
+		<!-- <form id="login-form" class="form-input-container" action="http://localhost:5000/api/login" method="post"> -->
+		<form id="login-form" class="form-input-container">
+
+			<!-- UserName Field -->
+			<div class="input-field">
+				<input type="text" id="uname" name="uname" class="form-input" required>
+				<label for="uname" class="form-label">
+					Username
+				</label>
+			</div>
+
+			<!-- Password Field -->
+			<div class="input-field">
+				<input type="password" id="psw" name="psw" class="form-input" required>
+				<label for="psw" class="form-label">
+					Password
+				</label>
+			</div>
+
+
+			<div class="form-btn-container">
+				<input type="submit" class="form-btn" name="loginSubmit" value="Login">
+			</div>
+
+		</form>
+
+		<div class="form-footer">
+			<a href="https://github.com/ucx15/Library-Manager" class="links">
+				Need Help?
+			</a>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+	"watch": [
+		"."
+	],
+	"ext": "html, css, js, cjs, mjs, json"
+}
